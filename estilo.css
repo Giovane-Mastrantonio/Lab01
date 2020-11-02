@@ -1,0 +1,132 @@
+.baixeoapp {
+	display: flex;
+  	justify-content: center;
+	text-align: center;
+	border-style: none;
+	background-color: #121212;
+	color: #FFFFFF;
+	height: 50px;
+}
+
+a:link{
+	color: white;
+}
+a:visited{
+	color:white;
+}
+
+
+.bt_baixeoapp{
+	vertical-align: middle;
+	text-align: center;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+}
+
+.topopreto {
+	border-style: none;
+	background-color: #000000;
+	height: 39px;
+
+}
+
+.bt_ren{
+	margin: 0;
+	padding: 0;
+}
+
+.bt_ashua{
+	margin: 0;
+	padding: 0;
+
+}
+
+.menupresente
+ {
+ 	font-size: 12px;
+ 	display: table;
+ 	margin: auto;
+ 	align-items: center;
+
+}
+
+ul {
+	align-items: center;
+	margin: 0px;
+	padding: 0px;
+
+
+}
+
+li{
+	list-style-type: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+a{
+	font-family: all;
+	text-decoration: none;
+	display: block;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+a:link{
+	color: black;
+}
+a:visited{
+	color:black;
+}
+
+.menusearch {
+	text-align: center;
+	height: 46px;
+	background: #DCDCDC;
+	border-style: none;
+
+}
+.search-container{
+  width: 490px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+.menunovidades {
+
+ 	font-size: 12px;
+ 	display: table;
+ 	margin: auto;
+}
+
+ul {
+	align-items: center;
+	margin: 0px;
+	padding: 0px;
+
+
+}
+
+li{
+	list-style-type: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+a{
+	font-family: all;
+	text-decoration: none;
+	display: block;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+
+.menunobanner {
+	height: 100px;
+	background: #DCDCDC;
+	border-style: none;
+
+}
