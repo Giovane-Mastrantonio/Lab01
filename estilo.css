@@ -1,27 +1,35 @@
+body{
+	width: 1350px;
+}
 .baixeoapp {
-	display: flex;
-  	justify-content: center;
+	margin: auto;
+	width: 100%;
+	background-color: black;
 	text-align: center;
-	border-style: none;
-	background-color: #121212;
-	color: #FFFFFF;
-	height: 50px;
 }
-
-a:link{
+.baixeoapp img{
+	position: absolute;
+	display: inline-block;
+	width:167px;
+	padding: 10px;
+}
+.baixeoapp p{
+	text-align: center;
+	vertical-align: center;
+	display: inline-block;
 	color: white;
+	width: 50%;
 }
-a:visited{
+
+.baixeoapp a{
+	position: absolute;
+	display: inline-block;
+}
+
+.baixeoapp p a{
 	color:white;
-}
-
-
-.bt_baixeoapp{
-	vertical-align: middle;
+	display: inline-block;
 	text-align: center;
-	height: 30px;
-	margin: 0;
-	padding: 0;
 }
 
 .topopreto {
