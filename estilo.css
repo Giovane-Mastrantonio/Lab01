@@ -1,27 +1,33 @@
 body{
-	width: 1350px;
+	
+	width: 1420px;
+
 }
 .baixeoapp {
+
 	margin: auto;
-	width: 100%;
 	background-color: black;
 	text-align: center;
 }
 .baixeoapp img{
-	position: absolute;
 	display: inline-block;
 	width:167px;
-	padding: 10px;
+	padding-top: 10px;
+	position: relative;
+	top: -50%;
+	
 }
 .baixeoapp p{
-	text-align: center;
+	text-align: right;
 	vertical-align: center;
 	display: inline-block;
 	color: white;
-	width: 50%;
+	width: 28%;
+
 }
 
 .baixeoapp a{
+	text-decoration: underline;
 	position: absolute;
 	display: inline-block;
 }
@@ -33,10 +39,12 @@ body{
 }
 
 .topopreto {
+	margin:0;
+	padding: 0;
 	border-style: none;
 	background-color: #000000;
 	height: 39px;
-
+	align-items: left;
 }
 
 .bt_ren{
@@ -50,25 +58,25 @@ body{
 
 }
 
-.menupresente
- {
+#menupresente {
 	font-size: 12px;
-	display: table;
+	text-align: center;
+	height: 45px;
+	width: 690px;
 	margin: auto;
-	align-items: center;
+	
 }
 
-ul {
+#ulpresente{
 	align-items: center;
-	margin: 0px;
+	width: 100%;
+    display: inline-block;
+	text-align: center;
+}
+
+#menupresente li{
+	margin-left: 20px;
 	padding: 0px;
-}
-
-li{
-	list-style-type: none;
-	float: left;
-	margin: 0;
-	padding: 0;
 }
 
 a:link{
@@ -84,13 +92,50 @@ a:active{
 	color: black;
 }
 
+.mapar {
+z-index: 1;
+background-color: #FFF;
+border: 1px solid #000;
+height: 450px;
+padding: 10px;
+width: 600px;
+position: fixed;
+top: 35%;
+left:35%;
+margin: -75px 0 0 -200px;
+}
+
+.mapar, .overlay {
+display: none;
+}
+
+.mapar .close {
+background-color: #FF1A2D;
+color: #FFF;
+padding: 5px;
+position: absolute;
+right: -25px;
+top: -12px;
+}
+
+
+.overlay {
+position: fixed;
+top: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 0.5);
+width: 100%;
+height: 100%;
+}
+
 #menusearch {
-	text-align: center;
+	
 	background-color:#d5d5d5;
   	border:solid 0px;
   	border-radius:5px;
-  	width:400px;
-  	height: 36px;
+  	width:690px;
+  	height: 45px;
+  	margin: auto;
 }
 
 #msearch{
@@ -99,9 +144,9 @@ a:active{
   padding-left:5px;
   font-style:italic;
   font-size:14px;
-  border:none;
-  height:32px;
-  width:260px;
+  border:solid 0px;
+  height:40px;
+  width:680px;
 }
 
 .menunovidades {
@@ -135,8 +180,12 @@ a{
 
 
 .menunobanner {
-	height: 100px;
+	height: 100%;
 	background: #DCDCDC;
 	border-style: none;
+}
 
+.menunobanner img{
+	width: 100%;
+	height: 100%;
 }

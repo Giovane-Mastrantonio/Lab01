@@ -1,57 +1,77 @@
-	<!DOCTYPE html>
-	<html lang="pt-br">
-	<head>
-		<meta charset="utf-8">
-		<title>Moda Feminina, Masculina, Infantil e Perfumes - XXXXXX</title>
-		<link rel="stylesheet" type="text/css" href="estilo.css">
-	</head>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Moda Feminina, Masculina, Infantil e Perfumes - Minha Loja</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#show-modal').on('click', function() { $('.overlay, .mapar').show();});
+			$('.overlay, .close').on('click', function() { $('.overlay, .mapar').hide();});
+		})
+	</script>
+</head>
 
-	<body>
+<body>
 
 	<div class="baixeoapp">
-		<a href="#"><img src="bt_baixeoapp.jpg"></a>
-		<p>e aproveite as ofertas exclusivas  <a href="#">CONFIRA</a></p>
+		<span><a href="#"><img src="bt_baixeoapp.jpg"></a></span>
+		<span><p>e aproveite as ofertas exclusivas  <a href="#">CONFIRA</a></p></span>
 	</div>
 
-	<div class="topopreto"><div class="coluna1"><img id="bt_ren" src="bt_ren.jpg"><img id="bt_ashua" src="bt_ashua.jpg"></div></div>
+	<div class="topopreto">
+
+		<img id="bt_ren" src="bt_ren.jpg"><img id="bt_ashua" src="bt_ashua.jpg">
+	</div>
 
 	<div class="menuren"></div>
-	
-	<div class="menupresente">
+
+	<div id="menupresente">
 		<br>
-		 <ul>
-	        <li><a href="#"><img src="img_presente.jpg">Cartão-Presente</a></li>
-	        <li><a href="#"><img src="img_ren.jpg">Pagamento</a></li>
-	        <li><a href="#"><img src="img_local.jpg">Nossas Lojas</a></li>
-	        <li><a href="#"><img src="img_pessoa.jpg">Atendimento</a></li>
-	        <li><a href="#"><img src="img_blog.jpg">Blog</a></li>
-	    </ul>
+		
+		<ul id="ulpresente">
+			<li id="lipresente"><a href="#"><img src="img_presente.jpg">Cartão-Presente</a></li>
+			<li id="lipresente"><a href="#"><img src="img_ren.jpg">Pagamento</a></li>
+			<li id="lipresente"><a id='show-modal' href='javascript:;'><img src="img_local.jpg">Nossas Lojas</a></li>
+			<li id="lipresente"><a href="#"><img src="img_pessoa.jpg">Atendimento</a></li>
+			<li><a href="#"><img src="img_blog.jpg">Blog</a></li>
+		</ul>
+		
 	</div>
+
+
 
 	<div id="menusearch"><input type="text" id="msearch" placeholder="Buscar Produtos"></div>
 
 	<div class="menunovidades">
 		<br>
-	<ul>
-	        <li><a href="#">NOVIDADES</a></li>
-	        <li><a href="#">CONFORTO</a></li>
-	        <li><a href="#">FEMININO</a></li>
-	        <li><a href="#">MASCULINO</a></li>
-	        <li><a href="#">INFANTIL</a></li>
-	        <li><a href="#">BELEZA</a></li>
-	        <li><a href="#">BOLSAS E ACESSÓRIOS</a></li>
-	        <li><a href="#">CALÇAS</a></li>
-	        <li><a href="#">RELÓGIOS</a></li>
-	        <li><a href="#">ESPORTIVO</a></li>
-	        <li><a href="#">MODA ÍNTIMA</a></li>
-	        <li><a href="#">MODA PRAIA</a></li>
-	        <li><a href="#">GEEK</a></li>
-	        <li><a href="#">OFERTAS</a></li>
-	    </ul>
-	<BR><BR>
+		<ul>
+			<li><a href="#">NOVIDADES</a></li>
+			<li><a href="#">CONFORTO</a></li>
+			<li><a href="#">FEMININO</a></li>
+			<li><a href="#">MASCULINO</a></li>
+			<li><a href="#">INFANTIL</a></li>
+			<li><a href="#">BELEZA</a></li>
+			<li><a href="#">BOLSAS E ACESSÓRIOS</a></li>
+			<li><a href="#">CALÇAS</a></li>
+			<li><a href="#">RELÓGIOS</a></li>
+			<li><a href="#">ESPORTIVO</a></li>
+			<li><a href="#">MODA ÍNTIMA</a></li>
+			<li><a href="#">MODA PRAIA</a></li>
+			<li><a href="#">GEEK</a></li>
+			<li><a href="#">OFERTAS</a></li>
+		</ul>
+		<BR><BR>
 	</div>
 
-	<div class="menunobanner"><br>MENU BANNER<BR></div>
-
-	</body>
-	</html>
+	<div class="menunobanner">
+		<img src="imgbanner.jpg">
+	</div>
+	<div class='mapar'>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d845.5813820038627!2d-52.092057370785405!3d-32.03337911191794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95119c111b83a9f7%3A0xc799f31957c82408!2sPra%C3%A7a%20Sete%20Setembro%20-%20Centro%2C%20Rio%20Grande%20-%20RS%2C%2096200-120!5e0!3m2!1spt-BR!2sbr!4v1604635074130!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		<a href='javascript:;' class='close'> X </a>
+	</div>
+	<div class='overlay'></div>
+</body>
+</html>
